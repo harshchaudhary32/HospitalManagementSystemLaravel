@@ -38,12 +38,8 @@
             @if(Route::has('login'))
 
             @auth
-                              <form method="POST" action="{{ route('logout') }}">
-                                  @csrf
-
-                                    <input type="submit" value="Logout">
-
-                              </form>
+                       <x-app-layout>
+                       </x-app-layout>       
 
 
             @else
