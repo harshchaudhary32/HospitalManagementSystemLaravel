@@ -2,7 +2,7 @@
       <div class="container">
         <div class="row align-items-center">
           <div class="col-lg-6 py-3 wow fadeInUp">
-            <h1>Welcome to Your Health <br> Center</h1>
+            <h1>About Us</h1>
             <p class="text-grey mb-4">Whats special about us?Well our team"E- Plus" targets the health sector.E+ ensures the connection between you and the hospital in easy and as simple way as possible. So,rest asssured our team and our website does all the hassle hospital waiting job taking appointment and so on other for you. To make your job simple and clearer our team will do best in the future as well. If you have any problems or suggestion feel free to give us your valueable feedback in the footer section. Thankyou!</p>
             <a href="about.html" class="btn btn-primary">Learn More</a>
           </div>
