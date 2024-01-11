@@ -120,7 +120,7 @@
                   <div class="avatar-img">
                     <img src="../assets/img/person/person_1.jpg" alt="">
                   </div>
-                  <span>Roger Adams</span>
+                  <span>Rushabs</span>
                 </div>
                 <span class="mai-time"></span> 4 weeks ago
               </div>
@@ -131,7 +131,7 @@
           <div class="card-blog">
             <div class="header">
               <div class="post-category">
-                <a href="#">Covid19</a>
+                <a href="#">Corona</a>
               </div>
               <a href="blog-details.html" class="post-thumb">
                 <img src="../assets/img/blog/blog_3.jpg" alt="">
