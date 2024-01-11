@@ -3,7 +3,7 @@
         <div class="row align-items-center">
           <div class="col-lg-6 py-3 wow fadeInUp">
             <h1>Welcome to Your Health <br> Center</h1>
-            <p class="text-grey mb-4">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Accusantium aperiam earum ipsa eius, inventore nemo labore eaque porro consequatur ex aspernatur. Explicabo, excepturi accusantium! Placeat voluptates esse ut optio facilis!</p>
+            <p class="text-grey mb-4">Whats special about us?Well our team"E- Plus" targets the health sector.E+ ensures the connection between you and the hospital in easy and as simple way as possible. So,rest asssured our team and our website does all the hassle hospital waiting job taking appointment and so on other for you. To make your job simple and clearer our team will do best in the future as well. If you have any problems or suggestion feel free to give us your valueable feedback in the footer section. Thankyou!</p>
             <a href="about.html" class="btn btn-primary">Learn More</a>
           </div>
           <div class="col-lg-6 wow fadeInRight" data-wow-delay="400ms">
