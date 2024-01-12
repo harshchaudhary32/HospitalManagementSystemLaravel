@@ -13,6 +13,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Lemon&display=swap" rel="stylesheet">
     <title>Our Team</title>
     <style>
+        /*all the internal css*/
         * {
             margin: 0;
             padding: 0;
@@ -57,13 +58,6 @@
             line-height: 40px;
             text-align: center;
         }
-        /* .team{
-            position: absolute;
-        } */
-        /* #harsh-team{
-            top: 230px;
-            left: 110px;
-        } */
         .container img{
             box-shadow: 0px 0px 10px rgba(0,0,0,0.8);
         }
@@ -72,19 +66,11 @@
             height: auto;
             border-radius: 50%;
         }
-        /* #rushab-team{
-            top: 230px;
-            left: 500px;
-        } */
         #rushab-team img{
             width: 250px;
             height: 240px;
             border-radius: 50%;
         }
-        /* #pranil-team{
-            top: 230px;
-            right: 100px;
-        } */
         #pranil-team img{
             width: 230px;
             height: 240px;
@@ -115,6 +101,7 @@
             word-spacing: 2px;
             font-style: italic;
         }
+        /*responsive*/
         @media screen and (max-width:670px){
             .logo{
                 width: 140px;
@@ -151,7 +138,9 @@
             <h1>Our Team Members</h1>
             <h3>e-<span>PLus</span>-Track your health effectively.</h3>
         </strong>
+        <!--container that contains all the members-->
         <div class="container" >
+            <!--about harsh-->
             <div class="team" id="harsh-team">
                 <img src="/rusabey/harshpp.jpg" alt="">
                 <h4 class="name">Harsh Chaudhary</h4>
@@ -160,6 +149,7 @@
                     <li>DataBase Manager</li>
                 </ul>
             </div>
+            <!--about rushab-->
             <div class="team" id="rushab-team">
                 <img src="/rusabey/rushabpp.jpg" alt="rushab">
                 <h4 class="name">Rushab Risal</h4>
@@ -168,8 +158,8 @@
                     <li>Web-Designer</li>
                 </ul>
             </div>
+            <!--about pranil-->
             <div class="team" id="pranil-team">
-                <!-- Your third team member content -->
                 <img src="/rusabey/pranil.jpg" alt="">
                 <h4 class="name">
                     Pranil Poudel
