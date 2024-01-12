@@ -78,9 +78,12 @@ class AdminController extends Controller
         return redirect()->back();
     }
 
-    public function updatedoctor()
+    public function updatedoctor($id)
     {
+            $data = doctor::find($id);
 
-        return view('admin.updatedoctor');
+
+
+        return view('admin.updatedoctor',compact('data'));
     }
 }

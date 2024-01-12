@@ -53,4 +53,4 @@ Route::get('/showdoctor',[AdminController::class,'showdoctor']);
 
 Route::get('/deletedoctor/{id}',[AdminController::class,'deletedoctor']);
 
-Route::get('/updatedoctor',[AdminController::class,'updatedoctor']);
+Route::get('/updatedoctor/{id}',[AdminController::class,'updatedoctor']);
