@@ -77,4 +77,10 @@ class AdminController extends Controller
 
         return redirect()->back();
     }
+
+    public function updatedoctor()
+    {
+
+        return view('admin.updatedoctor');
+    }
 }
