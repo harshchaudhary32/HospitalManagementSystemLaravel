@@ -27,19 +27,6 @@
 
   @include('user.header');
 
-  @if(session()->has('message'))
-
-        <div class="alert alert-success">
-
-        <button type="button" class="close" data-dismiss="alert">
-        x
-        </button>
-        {{session()->get('message')}}
-
-            </div>
-        @endif
-        
-
   <div class="page-hero bg-image overlay-dark" style="background-image: url(../assets/img/bg_image_1.jpg);">
     <div class="hero-section">
       <div class="container text-center wow zoomIn">
@@ -133,7 +120,7 @@
                   <div class="avatar-img">
                     <img src="../assets/img/person/person_1.jpg" alt="">
                   </div>
-                  <span>Rushabs</span>
+                  <span>Roger Adams</span>
                 </div>
                 <span class="mai-time"></span> 4 weeks ago
               </div>
@@ -144,7 +131,7 @@
           <div class="card-blog">
             <div class="header">
               <div class="post-category">
-                <a href="#">Corona</a>
+                <a href="#">Covid19</a>
               </div>
               <a href="blog-details.html" class="post-thumb">
                 <img src="../assets/img/blog/blog_3.jpg" alt="">
@@ -173,7 +160,6 @@
     </div>
   </div> <!-- .page-section -->
 
-    
     @include('user.appointment');<!-- .page-section -->
 
   
