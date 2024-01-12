@@ -21,30 +21,29 @@
             <div class="col-sm-6 col-lg-3 py-3">
               <h5>More</h5>
               <ul class="footer-menu">
-                <li><a href="#">REGISTER AS PATIENT</a></li>
-                <li><a href="#">JOIN AS DOCTOR</a></li>
+                <li><a href="{{route('login')}}">LOGIN</a></li>
+                <li><a href="{{route('register')}}">REGISTER</a></li>
               </ul>
             </div>
             <div class="col-sm-6 col-lg-3 py-3">
               <h5>OUR SERVICES</h5>
               <ul class="footer-menu">
-                <li><a href="#">ONLINE APPOINTMENT</a></li>
-                <li><a href="#">DIGITAL PRESCRIBTION</a></li>
-                <li><a href="#">MANAGEMENT OF ONLINE REPORT</a></li>
+                <li><a href="user.appointment">ONLINE APPOINTMENT</a></li>
+                <li><a href="">DIGITAL PRESCRIBTION</a></li>
               </ul>
             </div>
             <div class="col-sm-6 col-lg-3 py-3">
               <h5>Contact</h5>
               <p class="footer-link mt-2">BALKUMARI,LALITPUR,NEPAL</p>
               <a href="#" class="footer-link">=977-0000123411</a>
-              <a href="#" class="footer-link">teamthikxa@gmail.com</a>
+              <a href="mailto:teamthikxa@gmail.com" class="footer-link">teamthikxa@gmail.com</a>
     
               <h5 class="mt-3">Social Media</h5>
               <div class="footer-sosmed mt-3">
-                <a href="#" target="_blank"><span class="mai-logo-facebook-f"></span></a>
-                <a href="#" target="_blank"><span class="mai-logo-twitter"></span></a>
-                <a href="#" target="_blank"><span class="mai-logo-google-plus-g"></span></a>
-                <a href="#" target="_blank"><span class="mai-logo-instagram"></span></a>
+                <a href="mailto:teamthikxa@gmail.com" target="_blank"><span class="mai-logo-facebook-f"></span></a>
+                <a href="mailto:teamthikxa@gmail.com" target="_blank"><span class="mai-logo-twitter"></span></a>
+                <a href="mailto:teamthikxa@gmail.com" target="_blank"><span class="mai-logo-google-plus-g"></span></a>
+                <a href="mailto:teamthikxa@gmail.com" target="_blank"><span class="mai-logo-instagram"></span></a>
               </div>
             </div>
           </div>
