@@ -8,6 +8,10 @@ use App\Models\Doctor;
 
 use App\Models\appointment;
 
+use Notification;
+
+use App\Notifications\myfirstnotification;
+
 class AdminController extends Controller
 {
     public function addview()
@@ -116,6 +120,35 @@ class AdminController extends Controller
         
 
         return redirect()->back()->with('message','Doctor details Updated Sucesfully !');
+
+    }
+
+    public function emailview($id)
+    {
+        $data=appointment::find($id);
+        return view('admin.emailview',compact('data'));
+    }
+
+    public function sendemail(Request $request,$id)
+    {
+       $data = appointment::find($id);
+
+        $details=[
+
+          'greeting' => $request->greeting, 
+          'body' => $request->body,
+          'actiontext' => $request->actiontext,
+          'actionurl' => $request->actionurl,
+          'endpart' => $request->endpart   
+
+
+
+        ];
+
+        Notification::send($data,new myfirstnotification($details));
+
+        return redirect()->back()->with('message','email sent Succesfully.');
+
 
     }
 }

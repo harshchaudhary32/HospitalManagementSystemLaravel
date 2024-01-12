@@ -29,6 +29,7 @@
             <th style="padding:10px">Status</th>
             <th style="padding:10px">Approve</th>
             <th style="padding:10px">Reject</th>
+            <th style="padding:10px">Send Mail</th>
             </tr>
 
 
@@ -43,6 +44,8 @@
             <td style="padding:10px">{{$appoint->status}}</td>
             <td><a class="btn btn-success" href="{{url('approved',$appoint->id)}}">Approved</a></td>
             <td><a class="btn btn-danger" href="{{url('canceled',$appoint->id)}}">Rejected</a></td>
+
+            <td><a class="btn btn-primary" href="{{url('emailview',$appoint->id)}}">Send Mail</a></td>
 
             </tr>
 
