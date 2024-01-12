@@ -28,8 +28,25 @@
       @include('admin.nav')
 
     <div class="container-fluid page-body-wrapper">
+
+    
+
        <div class="container" align="center" style="padding:100px";>
-        <form>
+
+       @if(session()->has('message'))
+
+        <div class="alert alert-success">
+
+        <button type="button" class="close" data-dismiss="alert">
+        x
+        </button>
+        {{session()->get('message')}}
+
+            </div>
+        @endif
+        
+        <form action="{{url('editdoctor',$data->id)}}" method="post" enctype="multipart/form-data">
+        @csrf
         <div style="padding:15px;">
         <label>Doctor Name</label>
         <input type="text" style="color:black" name="name" value="{{$data->name}}">
@@ -37,7 +54,7 @@
 
         <div style="padding:15px;">
         <label>Phone:</label>
-        <input type="number" style="color:black" name="name" value="{{$data->phone}}">
+        <input type="number" style="color:black" name="phone" value="{{$data->phone}}">
         </div>
 
         <div style="padding:15px;">
