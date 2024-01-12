@@ -19,6 +19,8 @@
   <link rel="stylesheet" href="../assets/vendor/animate/animate.css">
 
   <link rel="stylesheet" href="../assets/css/theme.css">
+    
+    
 </head>
 <body>
 
@@ -172,6 +174,8 @@
   </div> <!-- .page-section -->
 
     @include('user.appointment');<!-- .page-section -->
+
+    
 
   
     @include('user.footer');
