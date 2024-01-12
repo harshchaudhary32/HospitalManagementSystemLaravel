@@ -26,21 +26,25 @@
   <div class="back-to-top">></div>
 
   @include('user.header')
-
-        <table>
-            <div align="center;" style="padding:70px">
-                 <tr style="background-color:black;">
+        <div align="center" style="padding:70px">
+            <table>
+                 <tr style="background-color:black;" align="center">
                     <th style="padding:10px; font-size:20px; color:white;">Doctor Name</th>
                     <th style="padding:10px; font-size:20px; color:white;">Date</th>
                     <th style="padding:10px; font-size:20px; color:white;">Message</th>
                     <th style="padding:10px; font-size:20px; color:white;">Status</th>
+                    <th style="padding:10px; font-size:20px; color:white;">Cancel Appointment</th>
                     </tr>
-             <tr>
-                 <td></td>
-                 <td></td>
-                 <td></td>
-                 <td>S</td>
+                
+                @foreach($appoint as $appoints)
+                <tr style="background-color:green;">
+                 <td style="padding:10px; font-size:20px; color:white;">{{$appoints->doctor}}</td>
+                 <td style="padding:10px; font-size:20px; color:white;">{{$appoints->date}}</td>
+                 <td style="padding:10px; font-size:20px; color:white;">{{$appoints->message}}</td>
+                 <td style="padding:10px; font-size:20px; color:white;">{{$appoints->status}}</td>
+                <td><a class="btn btn-danger" onclick="return confirm('You sure to cancel appointment ?')" href="{{url('cancel_appoint',$appoints->id)}}">Cancel</a></td>
                 </tr>
+                @endforeach
         </table>
         </div>
 
