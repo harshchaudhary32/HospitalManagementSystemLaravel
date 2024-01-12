@@ -39,8 +39,12 @@
             rotate:10deg ;
         }
         .container {
-            display: flex;
-            justify-content: space-between;
+            display: grid;
+            position: absolute;
+            top: 230px;
+            left: 120px;
+            grid-template-columns: auto auto auto;
+            column-gap: 20%;
         }
         .container h4{
             font-size: 20px;
@@ -53,13 +57,13 @@
             line-height: 40px;
             text-align: center;
         }
-        .team{
+        /* .team{
             position: absolute;
-        }
-        #harsh-team{
+        } */
+        /* #harsh-team{
             top: 230px;
             left: 110px;
-        }
+        } */
         .container img{
             box-shadow: 0px 0px 10px rgba(0,0,0,0.8);
         }
@@ -68,19 +72,19 @@
             height: auto;
             border-radius: 50%;
         }
-        #rushab-team{
+        /* #rushab-team{
             top: 230px;
             left: 500px;
-        }
+        } */
         #rushab-team img{
             width: 250px;
             height: 240px;
             border-radius: 50%;
         }
-        #pranil-team{
+        /* #pranil-team{
             top: 230px;
             right: 100px;
-        }
+        } */
         #pranil-team img{
             width: 230px;
             height: 240px;
@@ -111,11 +115,38 @@
             word-spacing: 2px;
             font-style: italic;
         }
+        @media screen and (max-width:670px){
+            .logo{
+                width: 140px;
+            }
+            strong h1{
+                font-size: 20px;
+                text-align: center;
+            }
+        }
+        @media screen and (max-width:900px) {
+            .container{
+                grid-template-columns: auto auto;
+            }
+           
+        }
+        @media screen and (max-width:600px){
+            .container{
+                grid-template-columns: auto;
+            
+                row-gap: 30px;
+                top: 220px;
+                left: 85px;
+            }
+            .main-container{
+                height: 100vh;
+            }
+        }
     </style>
 </head>
 <body>
     <div class="main-container">
-        <img src="/rusabey/Picsart_24-01-03_20-10-17-253_adobe_express.png" alt="" class="logo">
+        <img src="/rusabey/logo.png" alt="" class="logo">
         <strong>
             <h1>Our Team Members</h1>
             <h3>e-<span>PLus</span>-Track your health effectively.</h3>
