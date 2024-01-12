@@ -27,6 +27,19 @@
 
   @include('user.header');
 
+  @if(session()->has('message'))
+
+        <div class="alert alert-success">
+
+        <button type="button" class="close" data-dismiss="alert">
+        x
+        </button>
+        {{session()->get('message')}}
+
+            </div>
+        @endif
+        
+
   <div class="page-hero bg-image overlay-dark" style="background-image: url(../assets/img/bg_image_1.jpg);">
     <div class="hero-section">
       <div class="container text-center wow zoomIn">
@@ -160,6 +173,7 @@
     </div>
   </div> <!-- .page-section -->
 
+    
     @include('user.appointment');<!-- .page-section -->
 
   
