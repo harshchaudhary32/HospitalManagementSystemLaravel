@@ -41,8 +41,11 @@
                 @if(Route::has('login'))
     
                 @auth
+                    <li class="nav-item mx-3">
+                          <a class="nav-link" style="background-color:green;color:white; border-radius:3px;" href="{{url('myappointment')}}">View Report </a>
+                        </li> 
                       <li class="nav-item">
-                          <a class="nav-link" style="background-color:green;color:white;" href="{{url('myappointment')}}">My Appointment</a>
+                          <a class="nav-link" style="background-color:green;color:white; border-radius:3px;" href="{{url('myappointment')}}"> My Appointments</a>
                         </li>
                            <x-app-layout>
                            </x-app-layout>       
