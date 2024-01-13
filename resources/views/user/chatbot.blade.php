@@ -19,8 +19,8 @@
 
 .chatbot-toggler {
   position: fixed;
-  bottom: 30px;
-  right: 35px;
+  bottom: 20px;
+  right: 85px;
   outline: none;
   border: none;
   height: 50px;
@@ -32,6 +32,7 @@
   border-radius: 50%;
   background: #724ae8;
   transition: all 0.2s ease;
+ z-index:100;
 }
 body.show-chatbot .chatbot-toggler {
   transform: rotate(90deg);
@@ -62,6 +63,7 @@ body.show-chatbot .chatbot-toggler span:last-child {
   box-shadow: 0 0 128px 0 rgba(0,0,0,0.1),
               0 32px 64px -48px rgba(0,0,0,0.5);
   transition: all 0.1s ease;
+  z-index:100;
 }
 body.show-chatbot .chatbot {
   opacity: 1;

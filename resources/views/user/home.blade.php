@@ -40,7 +40,7 @@
 
             </div>
         @endif
-  <div class="page-hero bg-image overlay-dark" style="background-image: url(../assets/img/bg_image_1.jpg);">
+  <div class="page-hero bg-image overlay-dark" style="background-image: url(../assets/img/bg_image_1.jpg);z-index:-2;">
     <div class="hero-section">
       <div class="container text-center wow zoomIn">
         <span class="subhead">Let's make your life happier</span>
@@ -51,7 +51,7 @@
   </div>
 
 
-  <div class="bg-light">
+  <div class="bg-light" style="z-index:-100;">
     <div class="page-section py-3 mt-md-n5 custom-index">
       <div class="container">
         <div class="row justify-content-center">
@@ -81,18 +81,18 @@
           </div>
         </div>
       </div>
-    </div> <!-- .page-section -->
+    </div>  
 
 
       @include('user.doctor');
 
       @include('user.about');
 
-      
-  <div class="page-section bg-light">
-    <div class="container">
-      <h1 class="text-center wow fadeInUp">Latest News</h1>
-      <div class="row mt-5">
+      <!--latest news
+            <div class="page-section bg-light">
+            <div class="container">
+                  <h1 class="text-center wow fadeInUp">Latest News</h1>
+                    <div class="row mt-5">
         <div class="col-lg-4 py-2 wow zoomIn">
           <div class="card-blog">
             <div class="header">
@@ -172,11 +172,14 @@
 
       </div>
     </div>
-  </div> <!-- .page-section -->
+  </div> -->
 
-    @include('user.appointment');<!-- .page-section -->
+    <div id="appo">
+    @include('user.appointment');
 
-    
+    </div>
+
+      @include('user.chatbot');
 
   
     @include('user.footer');

@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" >
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+  
 </head>
 <body>
     <header>
@@ -38,6 +39,10 @@
                 
                 <li class="nav-item">
                   <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="btn btn-primary ml-lg-3" href="#appo">Book Appointment</a>
                 </li>
                
                 <!-- Login/Register -->
