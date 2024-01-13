@@ -132,6 +132,8 @@
     </style>
 </head>
 <body>
+
+    @include('user.header')
     <div class="main-container">
         <img src="/rusabey/logo.png" alt="" class="logo">
         <strong>

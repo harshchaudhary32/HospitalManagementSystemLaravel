@@ -9,7 +9,7 @@
     <header>
         <nav class="navbar navbar-expand-lg navbar-light shadow-sm">
           <div class="container">
-            <a class="navbar-brand" href="#"><span class="text-primary">E</span>-Plus</a>
+            <a class="navbar-brand" href="{{url('/')}}"><span class="text-primary">E</span>-Plus</a>
     
             <form action="#">
               <div class="input-group input-navbar">
@@ -30,7 +30,7 @@
                   <a class="nav-link" href="{{url('/')}}">Home</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="about.html">About Us</a>
+                  <a class="nav-link" href="{{'user.ourteam'}}">Our Team</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="doctors.html">Doctors</a>

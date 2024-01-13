@@ -96,4 +96,9 @@ class HomeController extends Controller
             return redirect()->back();
     }
 
+    public function ourteam()
+    {
+        return view('rusabey/ourteam');
+    }
+
 }

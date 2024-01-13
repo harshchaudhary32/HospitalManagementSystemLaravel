@@ -83,6 +83,7 @@
       </div>
     </div> <!-- .page-section -->
 
+
       @include('user.doctor');
 
       @include('user.about');
