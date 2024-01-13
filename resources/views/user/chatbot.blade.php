@@ -65,6 +65,7 @@ body.show-chatbot .chatbot-toggler span:last-child {
   transition: all 0.1s ease;
   z-index:100;
 }
+
 body.show-chatbot .chatbot {
   opacity: 1;
   pointer-events: auto;
@@ -218,7 +219,7 @@ header h2 {
       <ul class="chatbox">
         <li class="chat incoming">
           <span class="material-symbols-outlined">smart_toy</span>
-          <p>Hi there 👋<br>How can I help you today?</p>
+          <p>Hi there 👋<br>Hi How're you feeling today ?</p>
         </li>
       </ul>
       <div class="chat-input">
@@ -288,7 +289,7 @@ const handleChat = () => {
     chatbox.scrollTo(0, chatbox.scrollHeight);
     
     setTimeout(() => {
-        // Display "Thinking..." message while waiting for the response
+        // Display "Thik xa..." message while waiting for the response
         const incomingChatLi = createChatLi("Thinking...", "incoming");
         chatbox.appendChild(incomingChatLi);
         chatbox.scrollTo(0, chatbox.scrollHeight);

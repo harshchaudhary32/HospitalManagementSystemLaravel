@@ -27,7 +27,7 @@
   <!-- Back to top button -->
   <div class="back-to-top"></div>
 
-  @include('user.header');
+  @include('user.header')
 
      @if(session()->has('message'))
 
@@ -84,9 +84,9 @@
     </div>  
 
 
-      @include('user.doctor');
+      @include('user.doctor')
 
-      @include('user.about');
+      @include('user.about')
 
       <!--latest news
             <div class="page-section bg-light">
@@ -175,14 +175,14 @@
   </div> -->
 
     <div id="appo">
-    @include('user.appointment');
+    @include('user.appointment')
 
     </div>
 
-      @include('user.chatbot');
+      @include('user.chatbot')
 
   
-    @include('user.footer');
+    @include('user.footer')
 
 <script src="../assets/js/jquery-3.5.1.min.js"></script>
 
