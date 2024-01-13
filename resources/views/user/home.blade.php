@@ -8,7 +8,7 @@
 
   <meta name="copyright" content="MACode ID, https://macodeid.com/">
 
-  <title>One Health - Medical Center HTML5 Template</title>
+  <title>E-PLUS</title>
 
   <link rel="stylesheet" href="../assets/css/maicons.css">
 
@@ -45,7 +45,7 @@
       <div class="container text-center wow zoomIn">
         <span class="subhead">Let's make your life happier</span>
         <h1 class="display-4">Healthy Living</h1>
-        <a href="#" class="btn btn-primary">Let's Consult</a>
+        <a href="appointment.blade.php" class="btn btn-primary">Let's Consult</a>
       </div>
     </div>
   </div>
