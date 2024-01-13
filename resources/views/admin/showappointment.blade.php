@@ -15,9 +15,9 @@
 
       @include('admin.nav')
 
-        <div class="container-fluid page-body-wrapper">
+        <div class="container-fluid page-body-wrapper "style="display:flex;justify-content:center">
 
-            <div align="center" style="padding:100px;">
+            <div style="padding:100px;">
             <table>
             <tr style="background-color:black;">
             <th style="padding:10px">Customer Name</th>
@@ -30,6 +30,8 @@
             <th style="padding:10px">Approve</th>
             <th style="padding:10px">Reject</th>
             <th style="padding:10px">Send Mail</th>
+            <th style="padding:10px">Send Report</th>
+            <th style="padding:10px">Edit Report</th>
             </tr>
 
 
@@ -42,11 +44,14 @@
             <td style="padding:10px">{{$appoint->date}}</td>
             <td style="padding:10px">{{$appoint->message}}</td>
             <td style="padding:10px">{{$appoint->status}}</td>
-            <td><a class="btn btn-success" href="{{url('approved',$appoint->id)}}">Approved</a></td>
-            <td><a class="btn btn-danger" href="{{url('canceled',$appoint->id)}}">Rejected</a></td>
+            <td><a class="btn btn-success" href="{{url('approved',$appoint->id)}}">Approve</a></td>
+            <td><a class="btn btn-danger" href="{{url('canceled',$appoint->id)}}">Reject</a></td>
 
             <td><a class="btn btn-primary" href="{{url('emailview',$appoint->id)}}">Send Mail</a></td>
 
+            <td><a class="btn btn-primary" href="{{url('sendreport')}}">Send Report</a></td>
+
+            <td><a class="btn btn-primary" href="{{url('sendreport')}}">Edit Report</a></td>
             </tr>
 
             @endforeach

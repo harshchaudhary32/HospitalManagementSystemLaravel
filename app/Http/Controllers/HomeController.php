@@ -101,4 +101,21 @@ class HomeController extends Controller
         return view('rusabey/ourteam');
     }
 
+     public function viewreport()
+    {
+        if(Auth::id())
+        {
+            $userid=Auth::user()->id;
+
+            $appoint=appointment::where('user_id',$userid)->get();
+
+            return view('user.viewreport',compact('appoint'));
+
+        }
+        else
+        {
+           return redirect()->back();
+        }
+    }
+
 }

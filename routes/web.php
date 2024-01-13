@@ -62,3 +62,9 @@ Route::get('/emailview/{id}',[AdminController::class,'emailview']);
 Route::post('/sendemail/{id}',[AdminController::class,'sendemail']);
 
 Route::get('/ourteam',[HomeController::class,'ourteam']);
+
+Route::get('/viewreport',[HomeController::class,'viewreport']);
+
+Route::get('/sendreport',[AdminController::class,'sendreport']);
+
+Route::post('/upload_report',[AdminController::class,'upload_report']);

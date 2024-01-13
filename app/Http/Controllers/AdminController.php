@@ -8,6 +8,8 @@ use App\Models\Doctor;
 
 use App\Models\appointment;
 
+use App\Models\reports;
+
 use Notification;
 
 use App\Notifications\myfirstnotification;
@@ -151,4 +153,27 @@ class AdminController extends Controller
 
 
     }
+
+    public function sendreport()
+    {
+        return view('admin.sendreport');
+    }
+
+    public function upload_report(Request $request,$id)
+    {
+            $report=new reports;
+
+        $report = appointment::find($id);
+
+            $report->name=$request->name;
+            $report->phone=$request->phone;
+            $report->room=$request->room;
+            $report->speciality=$request->speciality;
+
+            $report->save();
+
+            return redirect()->back()->with('message','Report Added Succesfully !!');
+    }
+
+
 }

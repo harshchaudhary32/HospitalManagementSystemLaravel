@@ -43,36 +43,37 @@
             </div>
         @endif
 
-        <form action="{{url('sendemail',$data->id)}}" method="post">
+        <form action="{{url('upload_report')}}" method="post" enctype="multipart/form-data">
             @csrf
         <div style="padding:10px;">
-        <label>Greetings</label>
-        <input type="text" name="greeting" style="color:black;" required>
+        <label>check-up date:</label>
+        <input type="date" name="checkupdate" style="color:black;" required>
         </div>
 
          <div style="padding:10px;">
-        <label>Body:</label>
-        <input type="text" name="body" style="color:black;" required>
+        <label>Symptoms:</label>
+        <input type="text" name="symptoms" placeholder="Symptoms:" style="color:black;" required>
         </div>
 
 
         <div style="padding:10px;">
-        <label>Action Text:</label>
-        <input type="text" name="actiontext" style="color:black;" required>
+        <label>Advise:</label>
+        <input type="text" name="advise" placeholder="Room number:" style="color:black;" required>
         </div>
 
-        <div style="padding:10px;">
-        <label>Action URL:</label>
-        <input type="text" name="actionurl" style="color:black;" required>
+         <div style="padding:15px;">
+        <label>IPrescription :</label>
+        <input type="text" name="prescription" placeholder="Image" required>
         </div>
 
+
         <div style="padding:10px;">
-        <label>End Part:</label>
-        <input type="text" name="endpart" style="color:black;" required>
+        <label>Follow-up date:</label>
+        <input type="date" name="followupdate" style="color:black;" required>
         </div>
 
         <div style="padding:15px;">
-        <input type="submit" class="btn btn-success" value="Send Mail">
+        <input type="submit" class="btn btn-success">
         </div>
 
 
