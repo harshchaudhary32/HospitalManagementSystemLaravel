@@ -12,6 +12,28 @@
             </div>
           </div>
         </div>
+
+        <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6 py-3 wow fadeInUp">
+            <h1>Our Team</h1>
+            <p class="text-grey mb-4">
+            HARSH Chaudhary [BackEnd Developer]
+
+            Pranil Poudel [ UI/UX Designer]
+
+            Rushab Risal [ FrontEnd Developer ]
+            </p>
+            <a href="mailto:teamthikxa@gmail.com" class="btn btn-primary">Learn More</a>
+          </div>
+          <div class="col-lg-6 wow fadeInRight" data-wow-delay="400ms">
+            <div class="img-place custom-img-1">
+              <img src="../assets/img/bg-doctor.png" alt="">
+            </div>
+          </div>
+        </div>
+
+
       </div>
     </div> <!-- .bg-light -->
   </div> <!-- .bg-light -->
